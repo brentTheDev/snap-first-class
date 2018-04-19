@@ -1,13 +1,21 @@
 <?php
 class Car {
-	protected $isCarNew = true;
-	protected $isCarElectric = true;
+	protected $isCarNew;
+	protected $isCarElectric;
 
-	public function getIsCarNew(): bool {
+	public function getIsCarNew(): 	bool {
 		return($this->isCarNew);
 	}
 
-	public function getIsCarElectric() : bool {
+	public function setIsCarNew(bool $isCarNew) {
+		$this->isCarNew = $isCarNew;
+	}
+
+	public function getIsCarElectric(): bool {
 		return($this->isCarElectric);
+	}
+
+	public function setIsCarElectric(bool $isCarElectric) {
+		$this->isCarElectric = $isCarElectric;
 	}
 }
