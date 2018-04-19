@@ -7,7 +7,7 @@ class Car {
 		return($this->isCarNew);
 	}
 
-	public function setIsCarNew(bool $isCarNew) {
+	public function setIsCarNew(bool $isCarNew): void {
 		$this->isCarNew = $isCarNew;
 	}
 
@@ -15,7 +15,7 @@ class Car {
 		return($this->isCarElectric);
 	}
 
-	public function setIsCarElectric(bool $isCarElectric) {
+	public function setIsCarElectric(bool $isCarElectric): void {
 		$this->isCarElectric = $isCarElectric;
 	}
 }
